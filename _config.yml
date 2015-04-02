@@ -1,0 +1,8 @@
+# Site settings
+title: jakerr@
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://jakerr.github.io" # the base hostname & protocol for your site
+github_username:  jakerr
+
+# Build settings
+markdown: kramdown
