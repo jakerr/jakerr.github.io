@@ -28,12 +28,12 @@ a host app that handles the UIApplicationMain invocation etc, I plan to
 experiment with that next.
 
 Walkthrough
-===========
+-----------
 What follows is a document of the steps it took me to successfully build (not
 run) a Piston program with SDL2 for the `armv7-apple-ios` architecture.
 
 See what breaks
----------------
+===============
 
 I started by just running `cargo build --target=armv7-apple-ios` to see what
 breaks. The error I got was:
@@ -53,7 +53,7 @@ the tool chain I had installed (nightly via multirust, in my case) wasn't built
 with the target I requested. Ok so I have to build the rust compiler myself.
 
 Building rustc for cross-compilation
-------------------------------------
+====================================
 
 It's as simple as passing `--target=...` to `./configure` when compiling rust.
 I wanted my version to be pinned to the rustc version I have installed with
@@ -103,7 +103,7 @@ multirust update ios --link-local ~/code/rustws/rustc-build/build/arm/bin/cargo
 {% endhighlight %}
 
 Cargo build again
------------------
+=================
 First, we should override our toolchain to the freshly built one. If you followed the instructions above that
 would be `multirust override ios`
 Now that we have an ios rust toolchain we can give `cargo build
@@ -146,7 +146,7 @@ through trial and error and googling the symbols to determine which iOS
 Frameworks each was referring to.
 
 Conclusion
-----------
+==========
 And with that I've compiled a binary for `armv7-apple-ios`. Next stop, figuring
 out how to make a host app bundle to stick it into and actually run it on
 a device.
