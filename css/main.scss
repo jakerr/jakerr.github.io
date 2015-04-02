@@ -3,8 +3,6 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -13,9 +11,15 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
+$stripe-top:       rgb(41, 231, 166);
+$stripe-bottom:    rgb(255, 60, 155);
 $text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$content-background-color: #353535;
+$background-color:     #fdfdfd;
+$brand-color:     #199168;
+$post-color:     #ffffff;
+$code-border-color: #bbb;
+$code-background-color: #fff;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

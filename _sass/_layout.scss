@@ -3,7 +3,7 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+//    border-bottom: 6px solid $stripe-top;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -162,7 +162,9 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    background-color: $content-background-color;
+    padding: 10px;
+//    border-top: 4px solid $stripe-bottom;
 }
 
 .page-heading {
@@ -193,6 +195,12 @@
 /**
  * Posts
  */
+.post {
+    border-top: 8px solid $grey-color;
+    padding: $spacing-unit;
+    background-color: $post-color;
+    border-radius: 0px 0px 4px 4px;
+}
 .post-header {
     margin-bottom: $spacing-unit;
 }
