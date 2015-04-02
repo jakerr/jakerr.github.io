@@ -8,8 +8,8 @@ categories: rust ios
 I'm doing some experimenting with using rust to build cross-platform graphical
 apps.
 
-The goal is to have a single codebase that I can build iOS, Android, Linux and
-Desktop versions of the app from. The I'm assuming the easiest path to get
+The goal is to have a single codebase from which I can build iOS, Android, Linux, OS X and
+Windows versions of the app. The I'm thinking the easiest path to get
 there is to lean on [SDL2](https://wiki.libsdl.org/FrontPage) and the
 [Piston](http://www.piston.rs) game framework on top of that.
 
