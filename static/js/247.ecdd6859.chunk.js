@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjakerr_github_io=self.webpackChunkjakerr_github_io||[]).push([[247],{247:function(e,r,n){n.r(r),n.d(r,{default:function(){return i}});n(791);var u=n(184);function i(){return(0,u.jsx)("div",{children:(0,u.jsx)("h1",{children:"Welcome."})})}}}]);
+//# sourceMappingURL=247.ecdd6859.chunk.js.map
